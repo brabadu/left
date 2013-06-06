@@ -4,7 +4,7 @@
  <title>Борислав Ларін</title>
  <link href="http://brabadu.com/atom.xml" rel="self"/>
  <link href="http://brabadu.com/"/>
- <updated>2013-06-06T13:56:16+03:00</updated>
+ <updated>2013-06-06T15:37:59+03:00</updated>
  <id>http://brabadu.com</id>
  <author>
    <name>Борислав Ларін</name>
@@ -16,7 +16,7 @@
    <link href="http://brabadu.com/posts/poskarzhytysa"/>
    <updated>2013-06-06T00:00:00+03:00</updated>
    <id>http://brabadu.com/posts/poskarzhytysa</id>
-   <content type="html">
+   <content type="html">&lt;p&gt;&lt;a href=&quot;https://twitter.com/brabadu/status/342596659315867648&quot; target=&quot;_blank&quot;&gt;Що це?&lt;/p&gt;&lt;/p&gt;
 </content>
  </entry>
  
