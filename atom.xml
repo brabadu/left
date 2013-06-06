@@ -4,12 +4,21 @@
  <title>Борислав Ларін</title>
  <link href="http://brabadu.com/atom.xml" rel="self"/>
  <link href="http://brabadu.com/"/>
- <updated>2013-06-06T10:44:06+03:00</updated>
+ <updated>2013-06-06T13:53:59+03:00</updated>
  <id>http://brabadu.com</id>
  <author>
    <name>Борислав Ларін</name>
  </author>
  
+ 
+ <entry>
+   <title>Поскаржитися</title>
+   <link href="http://brabadu.com/posts/zajchyk"/>
+   <updated>2013-06-05T00:00:00+03:00</updated>
+   <id>http://brabadu.com/posts/zajchyk</id>
+   <content type="html">
+</content>
+ </entry>
  
  <entry>
    <title>Про користь від YouTube</title>
