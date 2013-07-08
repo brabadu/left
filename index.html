@@ -12,6 +12,20 @@
   <meta name="author" content="Борислав Ларін" />
   <meta name="description" content="Про життя" />
 
+  
+    <meta property="og:title" content="Дописи" />
+    <meta property="og:description" content="<section class="content">
+  <ul class="listing">
+    {% for post in site.posts %}
+    <li>
+      <span>{{ post.date | date: "%d/%m/%Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>" />
+  
+  <meta property="og:type" content="article" />
+
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
 
   <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
