@@ -76,8 +76,7 @@ a {
   margin-right: 20px;
   margin-bottom: 50px; 
   border-left: solid 1px #DEDEDE;
-  padding-left: 15px;
-  overflow: hidden; }
+  padding-left: 15px; }
   .content h1 {
     color: #333;
     font-family: "Yanone Kaffeesatz", 'Roboto', sans-serif;
@@ -227,7 +226,6 @@ a {
   height: 100px;
   overflow: hidden;
   padding: 0;
-  width: 1000px;
 }
 
 .gallery:hover {
