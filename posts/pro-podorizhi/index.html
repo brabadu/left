@@ -38,8 +38,42 @@
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script type="text/javascript" src="/js/application.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+    load_gallery = function(image_theme){
+    var opts = {
+        q: image_theme,
+        cx: '015379858983269969169:subkun_nnri',
+        key: 'AIzaSyD7viD2gwUUn18g7edGP56AdSxVqosnnmU',
+        filter: 1,
+        imgSize: 'medium',
+        searchType: 'image'
+    },
+    url = 'https://www.googleapis.com/customsearch/v1',
+    cb = function(resp){
+        var images;
+
+        if (resp.items) {
+            images = $('.gallery');
+            $.each(resp.items, function(index, value){
+              var image_height, image;
+
+                image = $('<li>', {
+                    'class': 'gallery__item'
+                }).append($('<img>', {
+                    src: value.image.thumbnailLink,
+                    title: value.title
+                })).appendTo(images);
+            });
+        }
+        else {
+            console.log('not ok', resp);
+        }
+    };
+
+    $.get(url, opts, cb);
+};
+  </script>
 </head>
 
 <body>
