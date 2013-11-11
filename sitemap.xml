@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://life.brabadu.com/posts/deadline</loc>
+    </url>
+    
+    <url>
         <loc>http://life.brabadu.com/posts/rakovi-puhlyny-tasmanski-dyjavoly</loc>
     </url>
     
@@ -94,7 +98,7 @@
     
     
     <url>
-        <loc>http://life.brabadu.com/404.html</loc>
+        <loc>http://life.brabadu.com/</loc>
     </url>
     
     
@@ -102,7 +106,7 @@
     
     
     <url>
-        <loc>http://life.brabadu.com/about.html</loc>
+        <loc>http://life.brabadu.com/404.html</loc>
     </url>
     
     
@@ -117,11 +121,11 @@
     
     
     
+    
+    
     <url>
-        <loc>http://life.brabadu.com/</loc>
+        <loc>http://life.brabadu.com/about.html</loc>
     </url>
-    
-    
     
     
     

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="uk" lang="uk">
+<head>
+  <meta charset="utf-8">
+  <title>
+    
+      Deadline&#58; роман про управління проектами &ndash;
+    
+    Борислав Ларін
+  </title>
+
+  
+    <meta property="og:title" content="Deadline&#58; роман про управління проектами" />
+    <meta property="og:description" content="Мова в Дедлайні йде саме про управління проектами з розробки програмного забезпечення. Крім того це не та «книга про управління», яку очікуєш побачити. Це справжній роман зі шпигунами, викраденнями, позитивними та негативними героями." />
+    <meta name="description" content="Мова в Дедлайні йде саме про управління проектами з розробки програмного забезпечення. Крім того це не та «книга про управління», яку очікуєш побачити. Це справжній роман зі шпигунами, викраденнями, позитивними та негативними героями.">
+  
+  <meta property="og:type" content="article" />
+  <meta name="keywords" content="борислав, ларін, українське, життя, книжки, кіно, блог, враження, програми, огляд, думки, подорожі">
+
+  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+
+  <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
+  <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+    load_gallery = function(image_theme){
+    var opts = {
+        q: image_theme,
+        cx: '015379858983269969169:subkun_nnri',
+        key: 'AIzaSyD7viD2gwUUn18g7edGP56AdSxVqosnnmU',
+        filter: 1,
+        imgSize: 'medium',
+        searchType: 'image'
+    },
+    url = 'https://www.googleapis.com/customsearch/v1',
+    cb = function(resp){
+        var images;
+
+        if (resp.items) {
+            images = $('.gallery');
+            $.each(resp.items, function(index, value){
+              var image_height, image;
+
+                image = $('<li>', {
+                    'class': 'gallery__item'
+                }).append($('<img>', {
+                    src: value.image.thumbnailLink,
+                    title: value.title
+                })).appendTo(images);
+            });
+        }
+        else {
+            console.log('not ok', resp);
+        }
+    };
+
+    $.get(url, opts, cb);
+};
+  </script>
+</head>
+
+<body>
+  <section class="sidebar">
+    <a href="/">
+      <img src="http://gravatar.com/avatar/f97f29382b72cc9fefc973750fde6125?s=200" height="135" width="135" class="avatar" alt="Це я"/>
+    </a>
+
+    <section class="name">
+      <a href="/">
+        <span id="fname">Борислав</span>
+        <span id="lname">Ларін</span>
+      </a>
+    </section>
+
+    <section class="meta">
+      <a href="https://github.com/brabadu" target="_blank"><i class="icon-github"></i></a>
+      <a href="https://twitter.com/brabadu" target="_blank"><i class="icon-twitter"></i></a>
+      <a href="https://plus.google.com/106406627565076003063?rel=author" target="_blank"><i class="icon-google-plus"></i></a>
+      <a href="/atom.xml"><i class="icon-rss"></i></a>
+    </section>
+
+    <section class="sections">
+      <ul>
+        <li><a href="/about.html">Про цей блог</a></li>
+        <li><a href="/">Дописи</a></li>
+      </ul>
+    </section>
+  </section>
+
+  <section class="content">
+  <ul class="gallery"></ul>
+
+  <h1>
+    <a href="/posts/deadline">Deadline&#58; роман про управління проектами</a>
+  </h1>
+
+  <p>Раніше я читав ті книжки, про які чув дуже позитивний відгук. Вони не обов’язково були у сфері моїх прямих зацікавлень або моїх улюблених авторів. Достатньо мені було почути про книжку щось хороше, а самій книжці попастися на очі, я починав її читати. Зараз помітив, що шукаю собі літературу, яка відповідає на задані самому собі питання. Останні книжки, в тому числі і описані в цих дописах, були прочитані саме з цієї причини (<a href="/posts/istoria-boga">Історія Бога</a>, <a href="/posts/avanturist">Як стати авантюристом</a>, <a href="/posts/delivering-happiness">Доставляючи щастя</a>).</p>
+
+<p>Так само і <strong>«Дедлайн» Тома Демарко</strong> я почав тому, що хотів дізнатися більше про управління. Перші пошукові запити вказали саме на цю книжку, тому я і вирішив її прочитати, тим більше її примірник лежить в мене на роботі на шафі за спиною. Раніше ця книжка працювала підставкою під ноутбук в одного з моїх колег.</p>
+
+<p>Я не чекав, та виявилося, що мова в Дедлайні йде саме про управління проектами з розробки програмного забезпечення. Крім того це не та «книга про управління», яку очікуєш побачити. Це справжній роман зі шпигунами, викраденнями, позитивними та негативними героями. На місці приємне почуття гумору та вміння легко і просто створити історію, в яку органічно вплетено повчання із зрозумілим висновком. Деякі з них очевидні, деякі банальні, та знайшлися і позитивні та корисні.</p>
+
+<p>З того, що хотілося б виписати собі:</p>
+
+<ul>
+<li>Якщо людина не відчуває себе у безпеці, вона буде протидіяти змінам.</li>
+</ul>
+
+
+<p>Щодо негативна мотивації</p>
+
+<ul>
+<li>Погрози - найменш ефективний вид мотивації, якщо вас цікавить продуктивність працівників.</li>
+<li>Чим би ви не погрожували, задача не буде зроблена вчасно, якщо з самого початку на неї було відведено занадто мало часу.</li>
+<li>Більше того, якщо люди не впоряються, вам доведеться виконати свою обіцянку (погрозу).</li>
+</ul>
+
+
+<p>Управління ризиками:</p>
+
+<ul>
+<li>Для управління проектом достатньо управляти його ризиками.</li>
+<li>Відслідковуйте ті ризики, які можуть стати причиною провало проекту, не тільки кінцеві ризики.</li>
+<li>Оцініть ймовірність виникнення та вартість кожного ризику.</li>
+<li>Для кожного ризику визначте показник - симптом, за яким можна виявити, що ризик перетворюється на проблему.</li>
+</ul>
+
+
+<p>Гра у захисті</p>
+
+<ul>
+<li>Скорочуйте втрати</li>
+<li>Успіх проекту можно забезпечити швидше скороченням непотрібних зусиль, ніж прагненням нових перемог.</li>
+<li>Не створюйте нові команди без необхідності; пошукайте в колективі вже складені та спрацьовані команди.</li>
+<li>Залишайте команди працювати разом і після закінчення проекту (якщо вони самі цього хочуть), щоб у керівників, які прийдуть вам на зміну. було менше проблем із погано спрацьованими командами.</li>
+<li>Вважайте, що команда, яка хоче продовжувати працювати разом і далі, - це одна з основних цілей любого проекту</li>
+</ul>
+
+
+<p>Все це трохи вирване з контексту. На сторінках роману ці пункти виведені як резюме з якоїсь цілком реальної історії, незважаючи на навмисну фантастичність сюжету загалом. Цікаво, що загалом все зводиться, швидше, не до порад <strong>2як треба</strong> робити, а до застереження як робити точно <strong>не треба</strong>. Шлях може бути різний, а помилки на ньому у всіх загалом достатньо однакові.</p>
+
+<p>Отже, якщо ви читали «Як пасти котів» і вам не сподобалося (що не дивно), то спробуйте «Дедлайн». В Демарко вийшла приємна недовга притча про те, як десь, в чудовій країні Моровія, проекти здаються вчасно, консультанти перелітають Тихий океан для короткої консультації за обідом, а всі проблеми рано чи пізно вирішуються.</p>
+
+
+  <section class="byline">
+    11/11/2013
+  </section>
+  <!-- TODO: bio here -->
+  <section class="meta">
+    <h3>Коментарі та посилання</h3>
+      <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="brabadu">Твітніть</a>
+      <a href="http://twitter.com/brabadu" class="twitter-follow-button" data-show-count="false">Фоловте @brabadu</a>
+      <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+
+  </section>
+
+      <!-- START: Livefyre Embed -->
+      <div id="livefyre-comments"></div>
+      <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+      <script type="text/javascript">
+      (function () {
+          var articleId = fyre.conv.load.makeArticleId(null);
+          fyre.conv.load({}, [{
+              el: 'livefyre-comments',
+              network: "livefyre.com",
+              siteId: "333700",
+              articleId: articleId,
+              signed: false,
+              collectionMeta: {
+                  articleId: articleId,
+                  url: fyre.conv.load.makeCollectionUrl(),
+              }
+          }], function() {});
+      }());
+      </script>
+      <!-- END: Livefyre Embed -->
+
+</section>
+
+
+<script type="text/javascript">
+  load_gallery("Дедлайн Том Демарко");
+</script>
+
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2122286-4']);
+    _gaq.push(['_setDomainName', 'brabadu.com']);
+    _gaq.push(['_trackPageview']);
+
+    setTimeout("_gaq.push(['_trackEvent', '15_seconds', 'read'])", 15000);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter22085671 = new Ya.Metrika({id:22085671,
+                      webvisor:true,
+                      clickmap:true,
+                      trackLinks:true,
+                      accurateTrackBounce:true});
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="//mc.yandex.ru/watch/22085671" class="outofsight" alt="stats" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+</body>
+
+</html>
