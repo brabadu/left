@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://life.brabadu.com/posts/speaker</loc>
+    </url>
+    
+    <url>
         <loc>http://life.brabadu.com/posts/vse-inakshe</loc>
     </url>
     
@@ -135,14 +139,6 @@
     
     <url>
         <loc>http://life.brabadu.com/about.html</loc>
-    </url>
-    
-    
-    
-    
-    
-    <url>
-        <loc>http://life.brabadu.com/atom.xml</loc>
     </url>
     
     
