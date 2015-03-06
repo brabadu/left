@@ -54,12 +54,17 @@
       <div class="featured-image" style='background-image: url("/images/covers/base.jpg"); height: 102px;'></div>
     
 
-    <section class="content">
+    <section itemscope itemtype="http://schema.org/Article" class="content">
   <h1>
-    <a href="/posts/vijna">Війна</a>
+    <a itemprop="name" href="/posts/vijna">Війна</a>
   </h1>
 
-  <p>В основі всього антимайданівського руху з самого початку була георгіївська стрічка - згадка про Велику Перемогу у Великій Вітчизняній Війни (не буду чіплятися до суті символів і назв). І поїхало: фашизм, нацизм, іноді з приставкою нео-.</p>
+  
+    <img itemprop="image" class="hidden" src="/images/covers/base.jpg"/>
+  
+
+  <article itemprop="articleBody">
+    <p>В основі всього антимайданівського руху з самого початку була георгіївська стрічка - згадка про Велику Перемогу у Великій Вітчизняній Війни (не буду чіплятися до суті символів і назв). І поїхало: фашизм, нацизм, іноді з приставкою нео-.</p>
 
 <p>Моя думка проста як двері - ця війна була в першій половині минулого століття, 69 років тому! Весь світ зміг її пережити, піднятися і йти далі. Весь світ примирився і ніхто вже не нагадує про нацизм Німеччині, фашизм Італії. Я не чув великих розборок з приводу колабораціантів в інших країнах, в тому числі в Росії. І це не означає, що вони забули подвиг своїх власних дідів.</p>
 
@@ -69,9 +74,13 @@
 
 <p>Мало шансів, що ці слова щось насправді змінять. Розумію, що цим так зручно маніпулювати мільйонами людей, тим часом реалізовуючи свої амбіції. Але так хочеться, щоб слова “нацисти", “бандерівці", &ldquo;діди воювали”, “фашисти” та всі інші, які насправді перетворилися на чорно-білі беззмістовні штампи, перестали лунати в повсякденному житті та лишилися на сторінках підручників.</p>
 
+  </article>
 
   <section class="byline">
-    07/05/2014
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">Борислав Ларін</span>,
+    </span>
+    <span itemprop="datePublished" content="07/05/2014" >07/05/2014</span>
   </section>
   <!-- TODO: bio here -->
   <section class="meta">
@@ -82,33 +91,27 @@
 
   </section>
 
-      <!-- START: Livefyre Embed -->
-      <div id="livefyre-comments"></div>
-      <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-      <script type="text/javascript">
-      (function () {
-          var articleId = fyre.conv.load.makeArticleId(null);
-          fyre.conv.load({}, [{
-              el: 'livefyre-comments',
-              network: "livefyre.com",
-              siteId: "333700",
+  <!-- START: Livefyre Embed -->
+  <div id="livefyre-comments"></div>
+  <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+  <script type="text/javascript">
+  (function () {
+      var articleId = fyre.conv.load.makeArticleId(null);
+      fyre.conv.load({}, [{
+          el: 'livefyre-comments',
+          network: "livefyre.com",
+          siteId: "333700",
+          articleId: articleId,
+          signed: false,
+          collectionMeta: {
               articleId: articleId,
-              signed: false,
-              collectionMeta: {
-                  articleId: articleId,
-                  url: fyre.conv.load.makeCollectionUrl(),
-              }
-          }], function() {});
-      }());
-      </script>
-      <!-- END: Livefyre Embed -->
-
+              url: fyre.conv.load.makeCollectionUrl(),
+          }
+      }], function() {});
+  }());
+  </script>
+  <!-- END: Livefyre Embed -->
 </section>
-
-
-<script type="text/javascript">
-  load_gallery("");
-</script>
 
   </section>
 

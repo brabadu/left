@@ -54,12 +54,17 @@
       <div class="featured-image" style='background-image: url("/images/covers/base.jpg"); height: 102px;'></div>
     
 
-    <section class="content">
+    <section itemscope itemtype="http://schema.org/Article" class="content">
   <h1>
-    <a href="/posts/programky">Програмки</a>
+    <a itemprop="name" href="/posts/programky">Програмки</a>
   </h1>
 
-  <p>Я планував тут багато про що розказувати, зокрема і про те чим користуюся в побуті. Наприклад зараз хочу розказати про дві найкорисніші програми (під iOS), які є на моєму телефоні. Це буде не огляд, а дружня порада і враження від використання.</p>
+  
+    <img itemprop="image" class="hidden" src="/images/covers/base.jpg"/>
+  
+
+  <article itemprop="articleBody">
+    <p>Я планував тут багато про що розказувати, зокрема і про те чим користуюся в побуті. Наприклад зараз хочу розказати про дві найкорисніші програми (під iOS), які є на моєму телефоні. Це буде не огляд, а дружня порада і враження від використання.</p>
 
 <p>Першу з них поставив зовсім нещодавно - <a href="http://biletcafe.com.ua/">BiletCafe</a>. В неї вкрай просте, але надзвичайно корисне призначення - онлайн-купівля квитків на поїзди. Має приємну кольорову гамму, анімації та чудову українську локалізацію.
 Під час вибору місця показується схема вагона, що дозволяє змістовно обирати місце, а не гадати, чи шукати схему у великих інтернетах. Всі куплені квитки зберігаються, тож можна потім переглядати холодними зимовими вечорами. Доречі про зимові вечори, на екрані вибору потрібного напрямку для свого замовлення є посилання &ldquo;в гори за снігом&rdquo;. За тим посиланням список популярних поїздів, і можна одразу перейти до оформлення квитка в одному з них.</p>
@@ -74,9 +79,13 @@
 
 <p>Зараз, аналізуючи, я розумію, що тут нічого нового, в порівнянні з тим же стандартним iMessage, немає. Але виходить дуже зручно мати спеціальну програмку, в якій весь ваш такий простір з саме тою людиною.</p>
 
+  </article>
 
   <section class="byline">
-    24/05/2013
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">Борислав Ларін</span>,
+    </span>
+    <span itemprop="datePublished" content="24/05/2013" >24/05/2013</span>
   </section>
   <!-- TODO: bio here -->
   <section class="meta">
@@ -87,33 +96,27 @@
 
   </section>
 
-      <!-- START: Livefyre Embed -->
-      <div id="livefyre-comments"></div>
-      <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-      <script type="text/javascript">
-      (function () {
-          var articleId = fyre.conv.load.makeArticleId(null);
-          fyre.conv.load({}, [{
-              el: 'livefyre-comments',
-              network: "livefyre.com",
-              siteId: "333700",
+  <!-- START: Livefyre Embed -->
+  <div id="livefyre-comments"></div>
+  <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+  <script type="text/javascript">
+  (function () {
+      var articleId = fyre.conv.load.makeArticleId(null);
+      fyre.conv.load({}, [{
+          el: 'livefyre-comments',
+          network: "livefyre.com",
+          siteId: "333700",
+          articleId: articleId,
+          signed: false,
+          collectionMeta: {
               articleId: articleId,
-              signed: false,
-              collectionMeta: {
-                  articleId: articleId,
-                  url: fyre.conv.load.makeCollectionUrl(),
-              }
-          }], function() {});
-      }());
-      </script>
-      <!-- END: Livefyre Embed -->
-
+              url: fyre.conv.load.makeCollectionUrl(),
+          }
+      }], function() {});
+  }());
+  </script>
+  <!-- END: Livefyre Embed -->
 </section>
-
-
-<script type="text/javascript">
-  load_gallery("mobile apps");
-</script>
 
   </section>
 

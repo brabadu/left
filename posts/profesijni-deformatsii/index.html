@@ -54,12 +54,17 @@
       <div class="featured-image" style='background-image: url("/images/covers/base.jpg"); height: 102px;'></div>
     
 
-    <section class="content">
+    <section itemscope itemtype="http://schema.org/Article" class="content">
   <h1>
-    <a href="/posts/profesijni-deformatsii">Профейсійні деформації</a>
+    <a itemprop="name" href="/posts/profesijni-deformatsii">Профейсійні деформації</a>
   </h1>
 
-  <p>Коли тільки починав цей блог, то була ідея кожен допис починати фразою &ldquo;я програміст, тому&hellip;&rdquo;, бо майже на все я дивлюся так чи інакше з цієї точки зору. Професійні деформації - коли людина будь яку проблему чи ситуацію намагається вирішити за допомогою добре знайомих прийомів та інструментів. Є один жарт: &ldquo;коли програмісти прийдуть до влади, деякі міністерства замінять на простий скрипт&rdquo;. Так, нам тільки дай щось написати та автоматизувати. Та це навряд чи вирішить всі проблеми світу.</p>
+  
+    <img itemprop="image" class="hidden" src="/images/covers/base.jpg"/>
+  
+
+  <article itemprop="articleBody">
+    <p>Коли тільки починав цей блог, то була ідея кожен допис починати фразою &ldquo;я програміст, тому&hellip;&rdquo;, бо майже на все я дивлюся так чи інакше з цієї точки зору. Професійні деформації - коли людина будь яку проблему чи ситуацію намагається вирішити за допомогою добре знайомих прийомів та інструментів. Є один жарт: &ldquo;коли програмісти прийдуть до влади, деякі міністерства замінять на простий скрипт&rdquo;. Так, нам тільки дай щось написати та автоматизувати. Та це навряд чи вирішить всі проблеми світу.</p>
 
 <p>Зрозуміло бажання до всього застосовувати добре перевірені засоби, якими 40 годин на тиждень користуєшся на роботі. Та часто, коли інструмент не зовсім відповідає проблемі, доводиться щось додумувати, підклєювати на скотч, десь зробити вигляд, що так і треба. Мені одразу згадуються варіації не тему перепощеної всіма картинки &ldquo;хочеш сказти -  скажи, хочеш обняти - обніми&rdquo; (яку я тепер ніяк не можу знайти, як не старався), де всі дії замінюють на одну, як от &ldquo;хочеш сказати - <s>скажи</s>пиши диплом&rdquo;.</p>
 
@@ -70,9 +75,13 @@
 <p>Треба читати книжки з інших галузей, дивитися науково-популярні передачі та подкасти про все на світі.
 Цим і стараюся займатися: <a href="https://www.goodreads.com/review/list/7644793-boryslav">Goodreads</a>,  <a href="http://ted.com">TED</a>, <a href="http://www.radiolab.org/">Radiolab</a>, <a href="http://www.freakonomics.com/">Freakonomics</a> тощо.</p>
 
+  </article>
 
   <section class="byline">
-    10/06/2013
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">Борислав Ларін</span>,
+    </span>
+    <span itemprop="datePublished" content="10/06/2013" >10/06/2013</span>
   </section>
   <!-- TODO: bio here -->
   <section class="meta">
@@ -83,33 +92,27 @@
 
   </section>
 
-      <!-- START: Livefyre Embed -->
-      <div id="livefyre-comments"></div>
-      <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-      <script type="text/javascript">
-      (function () {
-          var articleId = fyre.conv.load.makeArticleId(null);
-          fyre.conv.load({}, [{
-              el: 'livefyre-comments',
-              network: "livefyre.com",
-              siteId: "333700",
+  <!-- START: Livefyre Embed -->
+  <div id="livefyre-comments"></div>
+  <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+  <script type="text/javascript">
+  (function () {
+      var articleId = fyre.conv.load.makeArticleId(null);
+      fyre.conv.load({}, [{
+          el: 'livefyre-comments',
+          network: "livefyre.com",
+          siteId: "333700",
+          articleId: articleId,
+          signed: false,
+          collectionMeta: {
               articleId: articleId,
-              signed: false,
-              collectionMeta: {
-                  articleId: articleId,
-                  url: fyre.conv.load.makeCollectionUrl(),
-              }
-          }], function() {});
-      }());
-      </script>
-      <!-- END: Livefyre Embed -->
-
+              url: fyre.conv.load.makeCollectionUrl(),
+          }
+      }], function() {});
+  }());
+  </script>
+  <!-- END: Livefyre Embed -->
 </section>
-
-
-<script type="text/javascript">
-  load_gallery("професія");
-</script>
 
   </section>
 

@@ -64,19 +64,28 @@
       <div class="featured-image" style='background-image: url("/images/covers/base.jpg"); height: 102px;'></div>
     
 
-    <section class="content">
+    <section itemscope itemtype="http://schema.org/Article" class="content">
   <h1>
-    <a href="/posts/pro-svyata">Про свята</a>
+    <a itemprop="name" href="/posts/pro-svyata">Про свята</a>
   </h1>
 
-  <p>Щороку ми всі спостерігаємо чималу громадську дискусію щодо травневих свят. Їх багато, вони довгі, довгоочікувані та виснажливі. На це можна дивитися принаймні з двох боків. Розумію роботодавців, які мають платити повну зарплатню за те, що народ фактично працював лише півмісяця. Розумію і всіх робітників-працівників, яким хочеться привітати весну та поїсти шашлика.</p>
+  
+    <img itemprop="image" class="hidden" src="/images/covers/base.jpg"/>
+  
+
+  <article itemprop="articleBody">
+    <p>Щороку ми всі спостерігаємо чималу громадську дискусію щодо травневих свят. Їх багато, вони довгі, довгоочікувані та виснажливі. На це можна дивитися принаймні з двох боків. Розумію роботодавців, які мають платити повну зарплатню за те, що народ фактично працював лише півмісяця. Розумію і всіх робітників-працівників, яким хочеться привітати весну та поїсти шашлика.</p>
 <p>Цього року проблема постала особливо гостро, бо виходити працювати на два дні серед тижня - справжнє знущання над собою. Перший день тільки згадуєш на чому зупинився, дивишся на такі ж розгублені очі колег і читаєш корпоративну пошту. Другий день теж без сплеску продуктивності. Всі ходять в очікуванні наступної порції свят.</p>
 <p>І от в цьому компоті народної радості я зрозумів, що насправді від пари вихідних я би відмовився. Мені навіть загалом все одно від яких саме :) Головне, щоб хоч трошки відпочинку лишили, бо таки хочеться.</p>
 <p>Якщо розібратися, то вихідний понеділок після Великодня не настільки вже необхідний. Святкують все таки в неділю, а навіть після всенічної можна спокійно відіспатися в той же день. Про перше травня мені взагалі важко щось сказати як про свято, що потребує окремого вихідного. Думаю, зі мною погодяться і ще десь із 99% громадян. День Перемоги, як на мене, одне з неоднозначних свят. Об’єктивної необхідності в ньому дедалі менше, хоча знайдуться ті, хто буде кричати про пам’ять предків і необхідність вихідного.</p>
 <p>Вихідний хочеться, бо весна, а не через щось інше. Який буде привід - неважливо, але якщо його б не було, то варто було б вигадати. Та зараз таких приводів, здається, все таки забагато.</p>
+  </article>
 
   <section class="byline">
-    08/05/2013
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">Борислав Ларін</span>,
+    </span>
+    <span itemprop="datePublished" content="08/05/2013" >08/05/2013</span>
   </section>
   <!-- TODO: bio here -->
   <section class="meta">
@@ -87,33 +96,27 @@
 
   </section>
 
-      <!-- START: Livefyre Embed -->
-      <div id="livefyre-comments"></div>
-      <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-      <script type="text/javascript">
-      (function () {
-          var articleId = fyre.conv.load.makeArticleId(null);
-          fyre.conv.load({}, [{
-              el: 'livefyre-comments',
-              network: "livefyre.com",
-              siteId: "333700",
+  <!-- START: Livefyre Embed -->
+  <div id="livefyre-comments"></div>
+  <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+  <script type="text/javascript">
+  (function () {
+      var articleId = fyre.conv.load.makeArticleId(null);
+      fyre.conv.load({}, [{
+          el: 'livefyre-comments',
+          network: "livefyre.com",
+          siteId: "333700",
+          articleId: articleId,
+          signed: false,
+          collectionMeta: {
               articleId: articleId,
-              signed: false,
-              collectionMeta: {
-                  articleId: articleId,
-                  url: fyre.conv.load.makeCollectionUrl(),
-              }
-          }], function() {});
-      }());
-      </script>
-      <!-- END: Livefyre Embed -->
-
+              url: fyre.conv.load.makeCollectionUrl(),
+          }
+      }], function() {});
+  }());
+  </script>
+  <!-- END: Livefyre Embed -->
 </section>
-
-
-<script type="text/javascript">
-  load_gallery("феєрверки");
-</script>
 
   </section>
 

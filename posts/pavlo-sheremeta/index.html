@@ -52,12 +52,17 @@
       <div class="featured-image" style='background-image: url("/images/covers/base.jpg"); height: 102px;'></div>
     
 
-    <section class="content">
+    <section itemscope itemtype="http://schema.org/Article" class="content">
   <h1>
-    <a href="/posts/pavlo-sheremeta">Павло Шеремета або про користь від YouTube</a>
+    <a itemprop="name" href="/posts/pavlo-sheremeta">Павло Шеремета або про користь від YouTube</a>
   </h1>
 
-  <p>Виявляється, на YouTube є не тільки <a href="https://www.youtube.com/results?search_query=cats&amp;oq=cats&amp;gs_l=youtube.3..35i39j0l9.5956.6339.0.6591.4.4.0.0.0.0.169.591.0j4.4.0...0.0...1ac.1.11.youtube.xpAgWak_CqM">котики</a>, <a href="https://www.youtube.com/results?search_query=fail+compilation+&amp;oq=fail+compa&amp;gs_l=youtube.3.1.0i10l4j0j0i10j0l4.53476.54588.0.55613.10.6.0.3.3.0.192.895.0j6.6.0...0.0...1ac.1.11.youtube.8Xj6sDquYs8">компіляції фейлів</a> та музика. Є там і корисні відео.</p>
+  
+    <img itemprop="image" class="hidden" src="/images/covers/base.jpg"/>
+  
+
+  <article itemprop="articleBody">
+    <p>Виявляється, на YouTube є не тільки <a href="https://www.youtube.com/results?search_query=cats&amp;oq=cats&amp;gs_l=youtube.3..35i39j0l9.5956.6339.0.6591.4.4.0.0.0.0.169.591.0j4.4.0...0.0...1ac.1.11.youtube.xpAgWak_CqM">котики</a>, <a href="https://www.youtube.com/results?search_query=fail+compilation+&amp;oq=fail+compa&amp;gs_l=youtube.3.1.0i10l4j0j0i10j0l4.53476.54588.0.55613.10.6.0.3.3.0.192.895.0j6.6.0...0.0...1ac.1.11.youtube.8Xj6sDquYs8">компіляції фейлів</a> та музика. Є там і корисні відео.</p>
 
 <p>Я от через YouTube нещодавно відкрив для себе <a href="http://uk.wikipedia.org/wiki/%D0%A8%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D1%82%D0%B0_%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%B8%D1%87">Павла Шеремета</a>. Він найбільше відомий як Президент <a href="http://kse.org.ua/uk/">Київської Школи Економіки</a>, а ще ерудований та розумний спікер. Доступно пояснити він вміє. Спочатку подивився його відео з <a href="http://platfor.ma/blogs/tedexkyiv/33967/">київського TedX</a>, а потім виступ перед київськими пластунами.</p>
 
@@ -79,9 +84,13 @@
 
 <p>З часу опублікування цього допису минуло вже більше ніж півроку. Відбулася революція, про яку я і думати не міг, коли все це писалося. А Павло Шеремета в результаті став міністром економіки України. Сподіваюся, що така людина, як він, зможе провести необхідні реформи, щоб не тільки вивести країну з кризи але й нарешті розкрити весь свій потенціал.</p>
 
+  </article>
 
   <section class="byline">
-    05/06/2013
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">Борислав Ларін</span>,
+    </span>
+    <span itemprop="datePublished" content="05/06/2013" >05/06/2013</span>
   </section>
   <!-- TODO: bio here -->
   <section class="meta">
@@ -92,33 +101,27 @@
 
   </section>
 
-      <!-- START: Livefyre Embed -->
-      <div id="livefyre-comments"></div>
-      <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-      <script type="text/javascript">
-      (function () {
-          var articleId = fyre.conv.load.makeArticleId(null);
-          fyre.conv.load({}, [{
-              el: 'livefyre-comments',
-              network: "livefyre.com",
-              siteId: "333700",
+  <!-- START: Livefyre Embed -->
+  <div id="livefyre-comments"></div>
+  <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+  <script type="text/javascript">
+  (function () {
+      var articleId = fyre.conv.load.makeArticleId(null);
+      fyre.conv.load({}, [{
+          el: 'livefyre-comments',
+          network: "livefyre.com",
+          siteId: "333700",
+          articleId: articleId,
+          signed: false,
+          collectionMeta: {
               articleId: articleId,
-              signed: false,
-              collectionMeta: {
-                  articleId: articleId,
-                  url: fyre.conv.load.makeCollectionUrl(),
-              }
-          }], function() {});
-      }());
-      </script>
-      <!-- END: Livefyre Embed -->
-
+              url: fyre.conv.load.makeCollectionUrl(),
+          }
+      }], function() {});
+  }());
+  </script>
+  <!-- END: Livefyre Embed -->
 </section>
-
-
-<script type="text/javascript">
-  load_gallery("youtube");
-</script>
 
   </section>
 

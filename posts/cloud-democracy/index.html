@@ -54,12 +54,17 @@
       <div class="featured-image" style='background-image: url("/images/covers/base.jpg"); height: 102px;'></div>
     
 
-    <section class="content">
+    <section itemscope itemtype="http://schema.org/Article" class="content">
   <h1>
-    <a href="/posts/cloud-democracy">Демократія в хмарах</a>
+    <a itemprop="name" href="/posts/cloud-democracy">Демократія в хмарах</a>
   </h1>
 
-  <p><em><em>Десь приблизно рік тому я вже подумав завести блог, подібний на цей. Зробив пару постів на пробу і щось не пішло. Нещодавно вони мені попалися на очі і я вирішив їх опублікувати.</em></em></p>
+  
+    <img itemprop="image" class="hidden" src="/images/covers/base.jpg"/>
+  
+
+  <article itemprop="articleBody">
+    <p><em><em>Десь приблизно рік тому я вже подумав завести блог, подібний на цей. Зробив пару постів на пробу і щось не пішло. Нещодавно вони мені попалися на очі і я вирішив їх опублікувати.</em></em></p>
 
 <p>Нещодавно прочитав книжку «Облачная демократия» Леоніда Волкова та Федора Крашеннікова, двох російських авторів. Книжка невеличка, але досить інформативна та відкриває очі на деякі цікаві речі. Можна почитати в <a href="https://docs.google.com/viewer?a=v&amp;q=cache:EW97WlWwUdsJ:www.leonidvolkov.ru/files/cdem.doc+&amp;hl=uk&amp;gl=ua&amp;pid=bl&amp;srcid=ADGEESiAWCwqIhofq09t0aMoXzs78EFwRlp1LLywNoqQggCmOLPfcHjpqi4ufvGh19QsttMIlhtpveeo2G5Yc39dXMQtIlw_pUUfWXkcuEpd30zvEYaJo8FpRFb-YudAoZ59yGFLSPlc&amp;sig=AHIEtbT_t7oJxItYohQzGEyzqhFyiySjnA&amp;pli=1">онлайні</a> або <a href="http://www.leonidvolkov.ru/files/cdem.doc">скачати</a>.</p>
 
@@ -85,9 +90,13 @@
 
 <p>В Естонії вже проходили електронні вибори, досить успішно. Щоправда таки за старою схемою, раз на 5 років. Але це тільки перші кроки. Дуже цікаво, куди нас в решті решт занесе. І якщо книжка не розказує куди, то принаймні дає пропонує варіанти, над якими цікаво подумати.</p>
 
+  </article>
 
   <section class="byline">
-    18/09/2013
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">Борислав Ларін</span>,
+    </span>
+    <span itemprop="datePublished" content="18/09/2013" >18/09/2013</span>
   </section>
   <!-- TODO: bio here -->
   <section class="meta">
@@ -98,33 +107,27 @@
 
   </section>
 
-      <!-- START: Livefyre Embed -->
-      <div id="livefyre-comments"></div>
-      <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-      <script type="text/javascript">
-      (function () {
-          var articleId = fyre.conv.load.makeArticleId(null);
-          fyre.conv.load({}, [{
-              el: 'livefyre-comments',
-              network: "livefyre.com",
-              siteId: "333700",
+  <!-- START: Livefyre Embed -->
+  <div id="livefyre-comments"></div>
+  <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+  <script type="text/javascript">
+  (function () {
+      var articleId = fyre.conv.load.makeArticleId(null);
+      fyre.conv.load({}, [{
+          el: 'livefyre-comments',
+          network: "livefyre.com",
+          siteId: "333700",
+          articleId: articleId,
+          signed: false,
+          collectionMeta: {
               articleId: articleId,
-              signed: false,
-              collectionMeta: {
-                  articleId: articleId,
-                  url: fyre.conv.load.makeCollectionUrl(),
-              }
-          }], function() {});
-      }());
-      </script>
-      <!-- END: Livefyre Embed -->
-
+              url: fyre.conv.load.makeCollectionUrl(),
+          }
+      }], function() {});
+  }());
+  </script>
+  <!-- END: Livefyre Embed -->
 </section>
-
-
-<script type="text/javascript">
-  load_gallery("хмаринки");
-</script>
 
   </section>
 

@@ -54,12 +54,17 @@
       <div class="featured-image" style='background-image: url("/images/covers/base.jpg"); height: 102px;'></div>
     
 
-    <section class="content">
+    <section itemscope itemtype="http://schema.org/Article" class="content">
   <h1>
-    <a href="/posts/prosto-lyudy">Просто люди</a>
+    <a itemprop="name" href="/posts/prosto-lyudy">Просто люди</a>
   </h1>
 
-  <p>Мені свого часу пощастило познайомитися із багатьма надзвичайними людьми. Іноді такі надзвичайні люди знайомляться між собою і роблять дивовижні речі.</p>
+  
+    <img itemprop="image" class="hidden" src="/images/covers/base.jpg"/>
+  
+
+  <article itemprop="articleBody">
+    <p>Мені свого часу пощастило познайомитися із багатьма надзвичайними людьми. Іноді такі надзвичайні люди знайомляться між собою і роблять дивовижні речі.</p>
 
 <p>Так в Донецьку невелике, але творче та амбіційне місцеве онлайн ЗМІ <a href="http://www.ngo.donetsk.ua/">Портал неполітичних новин NGO.donetsk.ua</a> почало видавати дуже цікавий продукт.</p>
 
@@ -78,9 +83,13 @@
 
 <p>P.S. Коли вже зайшла мова про відео в інтернеті, то не можу не висловити радість від появи одразу двох українськиї проектів в цьому руслі: <a href="http://spilno.tv">Спільнобачення</a> та <a href="http://hromadske.tv">Громадське телебачення</a>. Перші, схоже, поки краще продумали організаційні нюанси, а другі - загалом відомі обличчя. То пусто, то густо і з конкуренцією. Ура!</p>
 
+  </article>
 
   <section class="byline">
-    14/06/2013
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">Борислав Ларін</span>,
+    </span>
+    <span itemprop="datePublished" content="14/06/2013" >14/06/2013</span>
   </section>
   <!-- TODO: bio here -->
   <section class="meta">
@@ -91,33 +100,27 @@
 
   </section>
 
-      <!-- START: Livefyre Embed -->
-      <div id="livefyre-comments"></div>
-      <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-      <script type="text/javascript">
-      (function () {
-          var articleId = fyre.conv.load.makeArticleId(null);
-          fyre.conv.load({}, [{
-              el: 'livefyre-comments',
-              network: "livefyre.com",
-              siteId: "333700",
+  <!-- START: Livefyre Embed -->
+  <div id="livefyre-comments"></div>
+  <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+  <script type="text/javascript">
+  (function () {
+      var articleId = fyre.conv.load.makeArticleId(null);
+      fyre.conv.load({}, [{
+          el: 'livefyre-comments',
+          network: "livefyre.com",
+          siteId: "333700",
+          articleId: articleId,
+          signed: false,
+          collectionMeta: {
               articleId: articleId,
-              signed: false,
-              collectionMeta: {
-                  articleId: articleId,
-                  url: fyre.conv.load.makeCollectionUrl(),
-              }
-          }], function() {});
-      }());
-      </script>
-      <!-- END: Livefyre Embed -->
-
+              url: fyre.conv.load.makeCollectionUrl(),
+          }
+      }], function() {});
+  }());
+  </script>
+  <!-- END: Livefyre Embed -->
 </section>
-
-
-<script type="text/javascript">
-  load_gallery("Портал неполітичних новин Просто люди");
-</script>
 
   </section>
 

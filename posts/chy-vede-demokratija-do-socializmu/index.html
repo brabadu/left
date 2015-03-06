@@ -52,12 +52,17 @@
       <div class="featured-image" style='background-image: url("/images/covers/base.jpg"); height: 102px;'></div>
     
 
-    <section class="content">
+    <section itemscope itemtype="http://schema.org/Article" class="content">
   <h1>
-    <a href="/posts/chy-vede-demokratija-do-socializmu">Чи веде демократія до соціалізму</a>
+    <a itemprop="name" href="/posts/chy-vede-demokratija-do-socializmu">Чи веде демократія до соціалізму</a>
   </h1>
 
-  <p>Прочитав чудову <a href="http://www.ej.ru/?a=note&amp;id=24135#">статтю Юлії Латиніної</a>. Вона досить довга, але дуже цікава і наштовхує на глибокі роздуми. Якщо статтю сильно спростити і скоротити, то держава загального добробуту, велфер - такий собі вірус, механізм самознищення західної цивілізації.</p>
+  
+    <img itemprop="image" class="hidden" src="/images/covers/base.jpg"/>
+  
+
+  <article itemprop="articleBody">
+    <p>Прочитав чудову <a href="http://www.ej.ru/?a=note&amp;id=24135#">статтю Юлії Латиніної</a>. Вона досить довга, але дуже цікава і наштовхує на глибокі роздуми. Якщо статтю сильно спростити і скоротити, то держава загального добробуту, велфер - такий собі вірус, механізм самознищення західної цивілізації.</p>
 
 <p>Країни заходу із значною соціалістичною складовою вбивають самі себе рядом заходів, які колись були покликані встановити справедливість для всіх. Різні програми підтримки малозабезпечених фактично заохочують безробітність, пенсії ставлять людину похилого віку в залежність від держави, а сучасна система освіти вирощує інфанта з особливими потребами (мова йде про тих, хто в школі не навчився навіть читати, як приклад 47% фактично безграмотного населення в Детройті) тощо ведуть до зменшення відсотку активної частини суспільства. З різних причин люди, що в основному покладаються на державну підтримку швидше розмножуються та передають свою модель поведінки нащадкам. Таких виборців стає все більше і вони дедалі більше витягують ресурси з тих, хто працює. Система позбавляє себе ресурсів, і така система в решті решт паде. Сюди також підпадають мусульмани в європейських країнах, які &ldquo;витісняють&rdquo; корінне населення, особливо не напружуючи себе освітою та роботою.</p>
 
@@ -71,9 +76,13 @@
 
 <p>Можливий варіант давати право голосу лише тим, хто вносить користь в загальну касу. Або взагалі, щось на зразок акцій у підприємств - щобільше ти вніс, тим вагоміший твій голос (. Розвивати ідею транснаціональних корпорацій як заміни державності можна ще далеко і там свої цікаві речі спливають). В час, коли твоя країна підходить до неминучого вибору як жити далі, варто подивитися трошки ширше, ніж звикі подумати, яку країну нам будувати далі.</p>
 
+  </article>
 
   <section class="byline">
-    12/01/2014
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">Борислав Ларін</span>,
+    </span>
+    <span itemprop="datePublished" content="12/01/2014" >12/01/2014</span>
   </section>
   <!-- TODO: bio here -->
   <section class="meta">
@@ -84,33 +93,27 @@
 
   </section>
 
-      <!-- START: Livefyre Embed -->
-      <div id="livefyre-comments"></div>
-      <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-      <script type="text/javascript">
-      (function () {
-          var articleId = fyre.conv.load.makeArticleId(null);
-          fyre.conv.load({}, [{
-              el: 'livefyre-comments',
-              network: "livefyre.com",
-              siteId: "333700",
+  <!-- START: Livefyre Embed -->
+  <div id="livefyre-comments"></div>
+  <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+  <script type="text/javascript">
+  (function () {
+      var articleId = fyre.conv.load.makeArticleId(null);
+      fyre.conv.load({}, [{
+          el: 'livefyre-comments',
+          network: "livefyre.com",
+          siteId: "333700",
+          articleId: articleId,
+          signed: false,
+          collectionMeta: {
               articleId: articleId,
-              signed: false,
-              collectionMeta: {
-                  articleId: articleId,
-                  url: fyre.conv.load.makeCollectionUrl(),
-              }
-          }], function() {});
-      }());
-      </script>
-      <!-- END: Livefyre Embed -->
-
+              url: fyre.conv.load.makeCollectionUrl(),
+          }
+      }], function() {});
+  }());
+  </script>
+  <!-- END: Livefyre Embed -->
 </section>
-
-
-<script type="text/javascript">
-  load_gallery("welfare state");
-</script>
 
   </section>
 

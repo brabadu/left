@@ -52,12 +52,17 @@
       <div class="featured-image" style='background-image: url("http://ua.pycon.org/static/2014/logo.png"); height: 102px;'></div>
     
 
-    <section class="content">
+    <section itemscope itemtype="http://schema.org/Article" class="content">
   <h1>
-    <a href="/posts/speaker">Спікер</a>
+    <a itemprop="name" href="/posts/speaker">Спікер</a>
   </h1>
 
-  <p>Завершився черговий PyCon у Львові, на якому вдалося стати доповідачем. Вперше виступав із технічною доповіддю перед колегами за межами роботи. На диво майже не хвилювався і все пройшло досить легко. А міг і голос тремтіти, і що хотів сказати забувати.</p>
+  
+    <img itemprop="image" class="hidden" src="http://ua.pycon.org/static/2014/logo.png"/>
+  
+
+  <article itemprop="articleBody">
+    <p>Завершився черговий PyCon у Львові, на якому вдалося стати доповідачем. Вперше виступав із технічною доповіддю перед колегами за межами роботи. На диво майже не хвилювався і все пройшло досить легко. А міг і голос тремтіти, і що хотів сказати забувати.</p>
 
 <p>Розказував у малому залі, людей було близько тридцяти. Із них мало не половина - з моєї роботи :)</p>
 
@@ -67,9 +72,13 @@
 
 <p>Головне, що вдалося не надто нудно і обтяжливо розказати, що ми робимо цікаві речі і пояснити де почитати детальніше. Вражає, як деякі хлопці вміють і надзвичайно серйозні технічні речі розповідати цікаво, тримати аудиторію без зайвих жартів. Треба вчитися :)</p>
 
+  </article>
 
   <section class="byline">
-    06/11/2014
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">Борислав Ларін</span>,
+    </span>
+    <span itemprop="datePublished" content="06/11/2014" >06/11/2014</span>
   </section>
   <!-- TODO: bio here -->
   <section class="meta">
@@ -80,33 +89,27 @@
 
   </section>
 
-      <!-- START: Livefyre Embed -->
-      <div id="livefyre-comments"></div>
-      <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-      <script type="text/javascript">
-      (function () {
-          var articleId = fyre.conv.load.makeArticleId(null);
-          fyre.conv.load({}, [{
-              el: 'livefyre-comments',
-              network: "livefyre.com",
-              siteId: "333700",
+  <!-- START: Livefyre Embed -->
+  <div id="livefyre-comments"></div>
+  <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+  <script type="text/javascript">
+  (function () {
+      var articleId = fyre.conv.load.makeArticleId(null);
+      fyre.conv.load({}, [{
+          el: 'livefyre-comments',
+          network: "livefyre.com",
+          siteId: "333700",
+          articleId: articleId,
+          signed: false,
+          collectionMeta: {
               articleId: articleId,
-              signed: false,
-              collectionMeta: {
-                  articleId: articleId,
-                  url: fyre.conv.load.makeCollectionUrl(),
-              }
-          }], function() {});
-      }());
-      </script>
-      <!-- END: Livefyre Embed -->
-
+              url: fyre.conv.load.makeCollectionUrl(),
+          }
+      }], function() {});
+  }());
+  </script>
+  <!-- END: Livefyre Embed -->
 </section>
-
-
-<script type="text/javascript">
-  load_gallery("");
-</script>
 
   </section>
 

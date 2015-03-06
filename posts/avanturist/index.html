@@ -52,20 +52,29 @@
       <div class="featured-image" style='background-image: url("/images/covers/base.jpg"); height: 102px;'></div>
     
 
-    <section class="content">
+    <section itemscope itemtype="http://schema.org/Article" class="content">
   <h1>
-    <a href="/posts/avanturist">Про авантюристів</a>
+    <a itemprop="name" href="/posts/avanturist">Про авантюристів</a>
   </h1>
 
-  <p>Досить швидко прослухав аудіокнижку Геннадія Балашова &ldquo;Как стать авантюристом? Размышления миллионера&rdquo;. Занадто довго буде розповідати як я дійшов до неї, та це і не дуже важливо. Цікаво те, що незважаючи на не надто високу художню якість, вторинність (частина книжки - це творчо перероблені класики типу Кійосакі чи Карнегі) і ще за вагон недоліків, вона нагадує про дещо дуже важливе. Для того, щоб отримати те, чого ти ніколи не мав, доведеться робити те, чого ти ніколи не робив. Постійно шукати кращих умов для себе, коханого, думати про можливості, шукати їх та створювати самому.</p>
+  
+    <img itemprop="image" class="hidden" src="/images/covers/base.jpg"/>
+  
+
+  <article itemprop="articleBody">
+    <p>Досить швидко прослухав аудіокнижку Геннадія Балашова &ldquo;Как стать авантюристом? Размышления миллионера&rdquo;. Занадто довго буде розповідати як я дійшов до неї, та це і не дуже важливо. Цікаво те, що незважаючи на не надто високу художню якість, вторинність (частина книжки - це творчо перероблені класики типу Кійосакі чи Карнегі) і ще за вагон недоліків, вона нагадує про дещо дуже важливе. Для того, щоб отримати те, чого ти ніколи не мав, доведеться робити те, чого ти ніколи не робив. Постійно шукати кращих умов для себе, коханого, думати про можливості, шукати їх та створювати самому.</p>
 
 <p>Мені цікаво було почитати історію успіху в Україні, складній і непередбачуваній. Про автора знаю не багато. З книжки він не видається надто вже приємним персонажем. Але бути хорошим хлопцем - не професія. Світ насправді цікавить те, що ти можеш йому дати, а не те, чи ти вітаєшся з сусідами і справно годуєш сусідського кота, коли тебе просять. Успіху досягає не той, хто найкраще розбирається в своїй галузі знань, а той, хто вчасно застосував свій, можливо навіть достатньо обмежений, набір знань і навичок. Отже треба вчитися &ldquo;продавати себе&rdquo; і невпинно шукати нагоди для цього.</p>
 
 <p>Я багато з чим не згодний. Для нього гроші головна мета життя, схоже. Мені хотілося б в кінці кінців мати ширший список здобутків, ніж тільки розмір гаманця. Але без грошей теж нікуди не дінешся, тож треба вміти дбати і про них.</p>
 
+  </article>
 
   <section class="byline">
-    09/08/2013
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">Борислав Ларін</span>,
+    </span>
+    <span itemprop="datePublished" content="09/08/2013" >09/08/2013</span>
   </section>
   <!-- TODO: bio here -->
   <section class="meta">
@@ -76,33 +85,27 @@
 
   </section>
 
-      <!-- START: Livefyre Embed -->
-      <div id="livefyre-comments"></div>
-      <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-      <script type="text/javascript">
-      (function () {
-          var articleId = fyre.conv.load.makeArticleId(null);
-          fyre.conv.load({}, [{
-              el: 'livefyre-comments',
-              network: "livefyre.com",
-              siteId: "333700",
+  <!-- START: Livefyre Embed -->
+  <div id="livefyre-comments"></div>
+  <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+  <script type="text/javascript">
+  (function () {
+      var articleId = fyre.conv.load.makeArticleId(null);
+      fyre.conv.load({}, [{
+          el: 'livefyre-comments',
+          network: "livefyre.com",
+          siteId: "333700",
+          articleId: articleId,
+          signed: false,
+          collectionMeta: {
               articleId: articleId,
-              signed: false,
-              collectionMeta: {
-                  articleId: articleId,
-                  url: fyre.conv.load.makeCollectionUrl(),
-              }
-          }], function() {});
-      }());
-      </script>
-      <!-- END: Livefyre Embed -->
-
+              url: fyre.conv.load.makeCollectionUrl(),
+          }
+      }], function() {});
+  }());
+  </script>
+  <!-- END: Livefyre Embed -->
 </section>
-
-
-<script type="text/javascript">
-  load_gallery("Авантюрист");
-</script>
 
   </section>
 

@@ -52,20 +52,29 @@
       <div class="featured-image" style='background-image: url("/images/covers/base.jpg"); height: 102px;'></div>
     
 
-    <section class="content">
+    <section itemscope itemtype="http://schema.org/Article" class="content">
   <h1>
-    <a href="/posts/istoria-boga">Книжка «Історія Бога»</a>
+    <a itemprop="name" href="/posts/istoria-boga">Книжка «Історія Бога»</a>
   </h1>
 
-  <p>Зараз читаю книжку на релігієзнавчу тему - <a href="http://psylib.org.ua/books/armst01/index.htm">«Історія Бога» (Карен Армстронг)</a>. Потужний опис розвитку іудаїзму, християнства та ісламу - трьох основних монотеїстичних релігій людства. Читати її і цікаво, і складно і суперечливо. Деякі думки, викладені в ній, в традиційному християнстві називається єрессю. Крім того, мова у авторки досить тяжка, на деяких параграфах мозок просто вимикається :) Але тим не менш, там дуже багато цікавого. Трохи зрозумів для себе чому Господь, який зараз вважається милостивим та добрим, в Старому Заповіті допомагає жорстко розправлятися з ворогами і взагалі є досить войовничим. Цікаво розкрито вплив окремих пророків на цілу релігію, таких як Ілія чи Осії. Особисті переживання та громадська активність яких, змінювала уявлення людей про Господа.</p>
+  
+    <img itemprop="image" class="hidden" src="/images/covers/base.jpg"/>
+  
+
+  <article itemprop="articleBody">
+    <p>Зараз читаю книжку на релігієзнавчу тему - <a href="http://psylib.org.ua/books/armst01/index.htm">«Історія Бога» (Карен Армстронг)</a>. Потужний опис розвитку іудаїзму, християнства та ісламу - трьох основних монотеїстичних релігій людства. Читати її і цікаво, і складно і суперечливо. Деякі думки, викладені в ній, в традиційному християнстві називається єрессю. Крім того, мова у авторки досить тяжка, на деяких параграфах мозок просто вимикається :) Але тим не менш, там дуже багато цікавого. Трохи зрозумів для себе чому Господь, який зараз вважається милостивим та добрим, в Старому Заповіті допомагає жорстко розправлятися з ворогами і взагалі є досить войовничим. Цікаво розкрито вплив окремих пророків на цілу релігію, таких як Ілія чи Осії. Особисті переживання та громадська активність яких, змінювала уявлення людей про Господа.</p>
 
 <p>Це не дуже очевидно, але сприйняття людьми Творця змінювалося з часом. Воно відрізнялося настільки, що можна сказати, що це були різні боги в рамках однієї релігії. Дізнався більше про основи віри іудаізма; як вийшло, що євреї стали обраним народом; як і чому з’явився іслам. Також краще зрозумів для себе що розкололо християнство на католиків та православних.</p>
 
 <p>Загалом книжка немала і непроста. Але дуже цікава. Окремо сподобалося читати про присутність маврів в Іспанії та в цей же час дивитися на цю синергію народів в Толедо, чути розповіді про реконкісту від гідів, бачити справжні приклади змішання трьох культур. Дуже вчасно взявся за неї. Словом, книжка розширює світогляд, а погоджуватися чи ні з автором щодо конкретних речей - діло читача.</p>
 
+  </article>
 
   <section class="byline">
-    21/07/2013
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">Борислав Ларін</span>,
+    </span>
+    <span itemprop="datePublished" content="21/07/2013" >21/07/2013</span>
   </section>
   <!-- TODO: bio here -->
   <section class="meta">
@@ -76,33 +85,27 @@
 
   </section>
 
-      <!-- START: Livefyre Embed -->
-      <div id="livefyre-comments"></div>
-      <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-      <script type="text/javascript">
-      (function () {
-          var articleId = fyre.conv.load.makeArticleId(null);
-          fyre.conv.load({}, [{
-              el: 'livefyre-comments',
-              network: "livefyre.com",
-              siteId: "333700",
+  <!-- START: Livefyre Embed -->
+  <div id="livefyre-comments"></div>
+  <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+  <script type="text/javascript">
+  (function () {
+      var articleId = fyre.conv.load.makeArticleId(null);
+      fyre.conv.load({}, [{
+          el: 'livefyre-comments',
+          network: "livefyre.com",
+          siteId: "333700",
+          articleId: articleId,
+          signed: false,
+          collectionMeta: {
               articleId: articleId,
-              signed: false,
-              collectionMeta: {
-                  articleId: articleId,
-                  url: fyre.conv.load.makeCollectionUrl(),
-              }
-          }], function() {});
-      }());
-      </script>
-      <!-- END: Livefyre Embed -->
-
+              url: fyre.conv.load.makeCollectionUrl(),
+          }
+      }], function() {});
+  }());
+  </script>
+  <!-- END: Livefyre Embed -->
 </section>
-
-
-<script type="text/javascript">
-  load_gallery("релігія");
-</script>
 
   </section>
 

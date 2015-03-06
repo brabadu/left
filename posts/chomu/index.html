@@ -54,12 +54,17 @@
       <div class="featured-image" style='background-image: url("/images/covers/base.jpg"); height: 102px;'></div>
     
 
-    <section class="content">
+    <section itemscope itemtype="http://schema.org/Article" class="content">
   <h1>
-    <a href="/posts/chomu">Чому?</a>
+    <a itemprop="name" href="/posts/chomu">Чому?</a>
   </h1>
 
-  <p>Ці думки я спонтанно почав писати в твіттер. Але швидко зрозумів, що твітів стане забагато. Найбільше обурився, коли побачив це відео:</p>
+  
+    <img itemprop="image" class="hidden" src="/images/covers/base.jpg"/>
+  
+
+  <article itemprop="articleBody">
+    <p>Ці думки я спонтанно почав писати в твіттер. Але швидко зрозумів, що твітів стане забагато. Найбільше обурився, коли побачив це відео:</p>
 
 <iframe width="560" height="420" src="http://www.youtube.com/embed/iHdB8y7yfOo?color=white&theme=light"></iframe>
 
@@ -76,9 +81,13 @@
 
 <p>Все це викликає в мене відразу і ненависть. Але я не знаю що з цим можна зробити. Єдиний вихід - еміграція. Зовнішня - в іншу країну, або внутрішня - як в тому ж <a href="/posts/atlant-jogo-plechi">Атланті, що розправив плечі</a>. Збиратися невеликою громадою адекватних людей, селитися подалі від всіх подібних діячів, розраховувати тільки на власні сили і сподіватися, що твої справи не стануть предметом зацікавлення тих, хто залишився &ldquo;на великій землі&rdquo;.</p>
 
+  </article>
 
   <section class="byline">
-    21/05/2013
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">Борислав Ларін</span>,
+    </span>
+    <span itemprop="datePublished" content="21/05/2013" >21/05/2013</span>
   </section>
   <!-- TODO: bio here -->
   <section class="meta">
@@ -89,33 +98,27 @@
 
   </section>
 
-      <!-- START: Livefyre Embed -->
-      <div id="livefyre-comments"></div>
-      <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-      <script type="text/javascript">
-      (function () {
-          var articleId = fyre.conv.load.makeArticleId(null);
-          fyre.conv.load({}, [{
-              el: 'livefyre-comments',
-              network: "livefyre.com",
-              siteId: "333700",
+  <!-- START: Livefyre Embed -->
+  <div id="livefyre-comments"></div>
+  <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+  <script type="text/javascript">
+  (function () {
+      var articleId = fyre.conv.load.makeArticleId(null);
+      fyre.conv.load({}, [{
+          el: 'livefyre-comments',
+          network: "livefyre.com",
+          siteId: "333700",
+          articleId: articleId,
+          signed: false,
+          collectionMeta: {
               articleId: articleId,
-              signed: false,
-              collectionMeta: {
-                  articleId: articleId,
-                  url: fyre.conv.load.makeCollectionUrl(),
-              }
-          }], function() {});
-      }());
-      </script>
-      <!-- END: Livefyre Embed -->
-
+              url: fyre.conv.load.makeCollectionUrl(),
+          }
+      }], function() {});
+  }());
+  </script>
+  <!-- END: Livefyre Embed -->
 </section>
-
-
-<script type="text/javascript">
-  load_gallery("Вадим Тітушко");
-</script>
 
   </section>
 

@@ -52,20 +52,29 @@
       <div class="featured-image" style='background-image: url("/images/covers/base.jpg"); height: 102px;'></div>
     
 
-    <section class="content">
+    <section itemscope itemtype="http://schema.org/Article" class="content">
   <h1>
-    <a href="/posts/delivering-happiness">Щастя, доставка до дверей</a>
+    <a itemprop="name" href="/posts/delivering-happiness">Щастя, доставка до дверей</a>
   </h1>
 
-  <p>Прочитав книжку <a href="http://kniga.biz.ua/book/management/119/1716/">Тоні Шея «Доставляючи Щастя»</a>. До мене її прочитала моя прекрасна половина та порадила мені. Потім книжка попалася і в списках корисної літератури на <a href="http://ain.ua/2013/07/29/134296">AIN.UA</a>. Сам я мало розумів, що собою представляє Zappos (онлайн-магазин про який в основному йде мова), тому не мав жодних очікувань від книжки про компанії. Насправді дуже цікаво буквально з перших сторінок. Я для себе зробив спостереження, на що орієнтується справжній підприємець (entrepreneur, як зараз модно) - він дивиться на речі і десь на підсвідомості прораховує як це комусь можна продати. Він з дитинства думає бізнес-планами, тому і бізнес виходить ніби сам собою. Це не те щоб новина, але на прикладі видно значно краще. <em>(Загалом описувати знахідки, які зробив &ldquo;для себе&rdquo; невдячна справа. Коли їх намагаєшся описати буквами виходять такі дрімучі банальності, а в той самий момент це було справжне просвітлення)</em></p>
+  
+    <img itemprop="image" class="hidden" src="/images/covers/base.jpg"/>
+  
+
+  <article itemprop="articleBody">
+    <p>Прочитав книжку <a href="http://kniga.biz.ua/book/management/119/1716/">Тоні Шея «Доставляючи Щастя»</a>. До мене її прочитала моя прекрасна половина та порадила мені. Потім книжка попалася і в списках корисної літератури на <a href="http://ain.ua/2013/07/29/134296">AIN.UA</a>. Сам я мало розумів, що собою представляє Zappos (онлайн-магазин про який в основному йде мова), тому не мав жодних очікувань від книжки про компанії. Насправді дуже цікаво буквально з перших сторінок. Я для себе зробив спостереження, на що орієнтується справжній підприємець (entrepreneur, як зараз модно) - він дивиться на речі і десь на підсвідомості прораховує як це комусь можна продати. Він з дитинства думає бізнес-планами, тому і бізнес виходить ніби сам собою. Це не те щоб новина, але на прикладі видно значно краще. <em>(Загалом описувати знахідки, які зробив &ldquo;для себе&rdquo; невдячна справа. Коли їх намагаєшся описати буквами виходять такі дрімучі банальності, а в той самий момент це було справжне просвітлення)</em></p>
 
 <p>Частина про корпоративну культуру Zappos для мене виявилася менш цікавою. Вона орієнтована на тих, кому Zappos цікава як компанія-легенда (на кшталт Starbucks чи Moleskine) чи підприємців, які теж постають перед проблемою корпоративної культури власного бізнесу. Як я вже сказав, для мене Zappos нічим не відрізняється від будь якого іншого магазину, до власного бізнесу поки не допрацювався тож я тут не цільова аудиторіяю. Хоча і від цієї частини знайшлась користь. Наприклад тепер я бачу, що багато речей, які робить керівництво моєї компанії були почерпнуті саме з цієї книжки. Тепер я розумію причини і кінцеву мету цих дій :)</p>
 
 <p>Словом, корисна книжка, якщо хочеш почитати надихаючу історію успіху та/або коротких посібник з влаштування корпоративної культури в компанії.</p>
 
+  </article>
 
   <section class="byline">
-    03/09/2013
+    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <span itemprop="name">Борислав Ларін</span>,
+    </span>
+    <span itemprop="datePublished" content="03/09/2013" >03/09/2013</span>
   </section>
   <!-- TODO: bio here -->
   <section class="meta">
@@ -76,33 +85,27 @@
 
   </section>
 
-      <!-- START: Livefyre Embed -->
-      <div id="livefyre-comments"></div>
-      <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
-      <script type="text/javascript">
-      (function () {
-          var articleId = fyre.conv.load.makeArticleId(null);
-          fyre.conv.load({}, [{
-              el: 'livefyre-comments',
-              network: "livefyre.com",
-              siteId: "333700",
+  <!-- START: Livefyre Embed -->
+  <div id="livefyre-comments"></div>
+  <script type="text/javascript" src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+  <script type="text/javascript">
+  (function () {
+      var articleId = fyre.conv.load.makeArticleId(null);
+      fyre.conv.load({}, [{
+          el: 'livefyre-comments',
+          network: "livefyre.com",
+          siteId: "333700",
+          articleId: articleId,
+          signed: false,
+          collectionMeta: {
               articleId: articleId,
-              signed: false,
-              collectionMeta: {
-                  articleId: articleId,
-                  url: fyre.conv.load.makeCollectionUrl(),
-              }
-          }], function() {});
-      }());
-      </script>
-      <!-- END: Livefyre Embed -->
-
+              url: fyre.conv.load.makeCollectionUrl(),
+          }
+      }], function() {});
+  }());
+  </script>
+  <!-- END: Livefyre Embed -->
 </section>
-
-
-<script type="text/javascript">
-  load_gallery("delivering happiness");
-</script>
 
   </section>
 
